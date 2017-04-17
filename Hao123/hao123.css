@@ -1,0 +1,95 @@
+* {width:auto;}
+   .header{
+          height: 65px;
+          width: 1600px;
+          margin:0px 180px;
+}
+   .headerlt1{
+         height: 60px;
+         width: 190px;
+         background:url(biaotou.PNG);
+         float: left;
+}
+  .headerlt2{
+         height:20px;
+         width: 80px;
+         line-height: 20px;
+         text-align: center;
+         background: green;
+         float: left;
+         border-radius: 5px;
+         margin: 20px 0px 0px 0px;
+}
+  .headerlt2 a{color: white;
+         text-decoration: none;
+         font-size: 13px;
+      }
+  .headerlt2 a:hover{text-decoration: underline;} 
+  .article{   margin:0px 180px;}
+  .navsou {  
+              width: 1000px;
+              padding-top:40px;
+              padding-left: 160px;
+              display: block;
+          }
+   .IMG{   
+             height: 34px;
+             width: 104px;
+             float: left;
+             margin-right: 20px;
+         }
+ .navsou .so{ 
+               float: left;
+              width: 448px;
+              height: 33px;
+              border: 2px solid #8a8a8a;
+              border-right: 0;
+              padding-left: 6px;
+              font-size: 16px;
+              font-family: arial;
+            }
+ .navsou .sub{  
+                float: left;
+                height: 39px;
+                width: 120px;
+                border: 2px solid #8a8a8a;
+                background: #dcdcdc;
+                font-weight:bold;
+                font-size: 20px;
+                cursor:pointer;
+             }
+   .nav{
+    width: 1000px;
+    height: 41px;
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background: #fcfcfc;
+    display: block;
+    margin-top: 80px;
+
+    
+   }
+   .nav li{ 
+    list-style: none;
+    float: left;
+    padding-left:30px;
+    color: white;
+    line-height: 10px;
+     }
+   .nav .shouye{margin-left: -40px;
+    background: green;
+    height: 42px;
+    line-height: 41px;
+    margin-top: -18px;
+    width: 53px;
+    }
+   .nav a{ text-decoration: none;color: #333;
+  font-family: Microsoft Yahei;
+  font-size: 16px;}
+   .nav .shouye a{color: white;}
+   .baritem .star-icon {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Hz/mn/Ev/BX/8z/2/index_menus_widthlg.png') no-repeat;
+}

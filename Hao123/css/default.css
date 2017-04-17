@@ -1,0 +1,1126 @@
+/* 
+* @Author: anchen
+* @Date:   2015-12-09 14:15:24
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-01-04 16:41:22
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: 0px none;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+body {
+    background-color: #eff0f0;
+    font: 14px/100% arial, "Hiragino Sans GB", "Hiragino Sans GB W3", \5b8b\4f53;
+}
+
+.layout-container {
+    position: relative;
+    background-position: 0px -256px;
+    min-width: 1190px;
+}
+
+.g-wrap {
+    min-width: 1190px;
+}
+
+.g-sbg1 {
+    background: transparent url("../image/hf_body_bg.png") repeat-x scroll left top;
+    background-color: transparent;
+    background-image: url("../image/hf_body_bg.png");
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+.hao123-tools-wrap {
+    height: 61px;
+    width: 100%;
+    position: relative;
+    z-index: 120;
+}
+
+.g-wd {
+    width: 1190px;
+    margin: 0px auto;
+}
+
+.hao123-tools {
+    height: 60px;
+    font-size: 12px;
+    line-height: 22px;
+    clear: both;
+    position: relative;
+    z-index: 996;
+    font-family: "Tahoma";
+}
+
+.sethome {
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    left: 192px;
+    top: 0px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-right: 22px;
+    float: left;
+    color: #FFF;
+    z-index: 30;
+    text-align: center;
+    background: transparent url("../image/index_widthlg.png") no-repeat scroll -20px -172px;
+}
+
+.g-fc22 {
+    color: #34A637;
+}
+
+.hao123-logo {
+    float: left;
+    width: 192px;
+    height: 60px;
+    z-index: 20;
+    vertical-align: top;
+}
+
+.g-ib {
+    display: inline-block;
+}
+
+.card {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.hao123-col {
+    height: 60px;
+    vertical-align: top;
+    float: left;
+}
+
+.colweather-active {
+    background-color: #F7F7F7;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #E4E4E4;
+    margin: 0px -1px 0px 79px;
+}
+#calendarv2:hover,#loginlink:hover,#mail:hover,.header-browser:hover,#skin-btn:hover{
+    background-color: #F7F7F7;
+    cursor:pointer;
+}
+.colweather_hover {
+    background: rgb(247, 247, 247);
+}
+
+.colweather-active .link {
+    position: relative;
+    z-index: 205;
+    height: 61px;
+    float: left;
+    background: rgb(247, 247, 247) none repeat scroll 0% 0%;
+}
+
+.colweather {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.weahtercity-arrow {
+    width: 9px;
+    height: 6px;
+    background: transparent url("../image/index_widthlg.png") no-repeat scroll -52px -97px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.colweahter-city {
+    line-height: 60px;
+    color: #999;
+}
+
+.colweahter-info {
+    padding-right: 10px;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+}
+
+#weatherv2 .colweahter-info>span:nth-child(1) {
+    background-image: url("../image/a1.png");
+}
+
+.weahterinfo-icon {
+    line-height: 60px;
+    vertical-align: middle;
+    width: 26px;
+    height: 60px;
+    background-position: 0px 13px;
+    background-repeat: no-repeat;
+}
+
+.weahterinfo-txt {
+    margin-left: 4px;
+}
+
+.weahterinfo-temperature {
+    font-family: "arial";
+    margin-left: 8px;
+}
+
+.colweather .control {
+    position: absolute;
+    left: 271px;
+    top: 60px;
+    width: 241px;
+    height: 110px;
+    padding: 20px 19px 0px 20px;
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    border: 1px solid #D9D9D9;
+    z-index: 204;
+}
+
+.colweather .select-province,
+.width-lg .colweather .select-city,
+.colweather .select-district {
+    float: left;
+    width: 118px;
+    margin-bottom: 10px;
+}
+
+.colweather .select-city {
+    margin-left: 5px;
+}
+
+.colweather .select-city,
+.colweather .select-district {
+    float: left;
+    width: 118px;
+    margin-bottom: 10px;
+}
+
+.colweather .btn-save {
+    width: 41px;
+    height: 22px;
+    background-position: -207px -124px;
+    display: inline-block;
+    padding: 0px;
+    margin: 12px 0px 0px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+}
+
+.g_icon,
+.g_hf-icon,
+.s-sicon,
+.g-sicon {
+    background-image: url("../image/index_icon.png");
+}
+
+.colweather .btn-cancle {
+    width: 41px;
+    height: 22px;
+    display: inline-block;
+    padding: 0px;
+    margin: 12px 0px 0px 11px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+}
+
+.colcalendar {
+    position: relative;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    width: 114px;
+    height: 60px;
+}
+
+.heid {
+    height: 62px;
+}
+
+#city {
+    display: none;
+}
+
+.calendarinfo-date {
+    width: 24px;
+    height: 60px;
+    line-height: 60px;
+    font-family: "arial";
+    background: transparent url("../image/index_widthlg.png") no-repeat scroll -20px -62px;
+}
+
+.calendarinfo-month {
+    font-family: "arial";
+    padding-left: 3px;
+}
+
+.calendarinfo-day {
+    padding-left: 3px;
+}
+
+.colcalendar-info {
+    line-height: 60px;
+    color: #999;
+    cursor: pointer;
+}
+
+#ticketTip {
+    position: absolute;
+    top: 19px;
+    left: 1px;
+    text-align: left;
+    height: 23px;
+    z-index: 500;
+    white-space: nowrap;
+    font-family: SimSun;
+}
+
+#ticketTip i {
+    width: 23px;
+    height: 23px;
+    vertical-align: top;
+    background-image: url("../image/f177a3c4ed92b35318e536cbb6d9bf69.png");
+}
+
+#ticketTip img {
+    position: absolute;
+    top: 23px;
+    left: 12px;
+}
+
+.hao123-links {
+    float: right;
+    height: 60px;
+    padding: 0px 230px 0px 0px;
+}
+
+.loginlink {
+    position: relative;
+    vertical-align: top;
+}
+
+.loginlink .login {
+    position: relative;
+    padding: 0px 9px 0px 33px;
+    line-height: 60px;
+    color: #999;
+    background-repeat: no-repeat;
+    background-position: -30px -110px;
+    z-index: 11;
+    background-image: url("../image/index_widthlg.png");
+}
+
+.loginlink .loginlink-mask {
+    filter: none;
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    display: none;
+    z-index: 10;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.mail {
+    width: 68px;
+    height: 60px;
+    display: inline-block;
+}
+
+.mail .link {
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 0px 0px 31px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: -96px -108px;
+    background-image: url("../image/index_widthlg.png");
+    display: block;
+    color: #999;
+}
+
+.header-browser,
+.header-phone,
+.header-desktop {
+    display: inline-block;
+    height: 60px;
+    overflow: hidden;
+    vertical-align: top;
+    position: relative;
+}
+
+.header-browser {
+    margin-left: -8px;
+}
+
+.header-browser .browser {
+    padding: 0px 9px 0px 32px;
+    line-height: 60px;
+    color: #999;
+    background-image: url("../image/index_widthlg.png");
+    background-repeat: no-repeat;
+    background-position: -162px -109px;
+    cursor: pointer;
+}
+
+.header-browser .link {
+    display: block;
+    width: 36px;
+    height: 60px;
+    text-align: center;
+}
+
+.skin-btn {
+    vertical-align: top;
+    width: 68px;
+    height: 60px;
+    color: #999;
+}
+
+.skin-txt {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 0px 0px 31px;
+    text-align: left;
+    background-image: url("../image/index_widthlg.png");
+    background-repeat: no-repeat;
+    background-position: -244px -108px;
+}
+
+.hao123-banner {
+    position: absolute;
+    right: 0px;
+    width: 222px;
+    height: 60px;
+    top: 0px;
+    text-align: right;
+    overflow: hidden;
+    z-index: 16;
+}
+
+.ecom {
+    width: 220px;
+    height: 60px;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hao123-search-panel-box {
+    height: 82px;
+}
+
+.hao123-search-panel {
+    position: relative;
+    z-index: 110;
+    /* width: 1000px;*/
+}
+
+.search .link .color {
+    background: transparent url("../image/webv2.png") no-repeat scroll left top;
+}
+
+.search .link span {
+    width: 104px;
+    height: 34px;
+    display: block;
+}
+
+.hao123-search {
+    height: 41px;
+    padding: 42px 0px 0px 166px;
+}
+
+.hao123-search .search {
+    display: inline-block;
+    width: 800px;
+    position: relative;
+}
+
+.search .logo {
+    width: 104px;
+    height: 34px;
+}
+
+.search .left {
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.tabs-toggle,
+.tabs-toggle:hover {
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    left: 125px;
+    z-index: 1;
+    padding: 0px 10px;
+    width: 38px;
+    height: 38px;
+    font: 12px/38px simsun;
+    text-decoration: none;
+    color: #999;
+    background: transparent url("../image/baidu-form.png") repeat scroll -319px 0px;
+}
+
+.tabs-toggle .arrow {
+    overflow: hidden;
+    position: absolute;
+    top: 16px;
+    left: 38px;
+    width: 9px;
+    height: 6px;
+    text-indent: -999px;
+    background: transparent url("../image/index_widthlg.png") repeat scroll -52px -97px;
+}
+
+.search .input-wrapper {
+    margin-right: 0px;
+    position: relative;
+    float: left;
+}
+
+.search .input-shadow {
+    width: 538px;
+    height: 38px;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid none solid solid;
+    border-color: #8A8A8A transparent #8A8A8A #8A8A8A;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    background: #FFF url("../image/baidu-form.png") no-repeat scroll -319px 0px;
+}
+
+.search .input {
+    width: 448px;
+    height: 18px;
+    padding: 6px 0px;
+    border: 0px none;
+    margin: 4px 30px 0px 60px;
+    font: 16px arial;
+    outline: none;
+}
+
+.search .hotword {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    text-indent: -99999px;
+    z-index: 12;
+}
+
+.search .button-wrapper {
+    vertical-align: top;
+    float: left;
+}
+
+.search .button {
+    width: 120px;
+    height: 40px;
+    border: 0px none;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent url("../image/index_widthlg.png") no-repeat scroll -20px 0px;
+}
+
+.color_choice {
+    position: absolute;
+    right: 36px;
+    top: 48px;
+}
+
+#color {
+    display: inlie-block;
+}
+
+#color li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#color li:nth-child(1) {
+    background:  #0AA770;
+}
+#color li:nth-child(2) {
+    background: #F44336;
+}
+
+#color li:nth-child(3) {
+    background: #E91E63;
+}
+
+#color li:nth-child(4) {
+    background: #9C27B0;
+}
+
+#color li:nth-child(5) {
+    background: #2196F3;
+}
+
+
+
+.hotsearchCon {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.hotsearch-box {
+    margin: 6px 0 26px 195px;
+    position: relative;
+    width: 442px;
+    height: 20px;
+    z-index: 103;
+}
+
+#list li {
+    display: inline-block;
+    margin-right: 9px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+#list li a {
+    margin-right: 6px;
+}
+
+#list li a:hover,#box-famoussite a:hover,#site a:hover {
+    color: #F50;
+    text-decoration: underline;
+}
+
+.firsta {
+    color: #090;
+    margin-right: 5px;
+}
+
+.firsta:hover {
+    color: #090 !important;
+}
+
+.hotsearchtop {
+    width: 538px;
+    position: relative;
+}
+
+.morea {
+    color: #090;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+.morea:hover {
+    text-decoration: underline;
+}
+
+.hao123-bodyct {
+    position: relative;
+    }
+
+#_wgt {
+    margin-bottom: 10px;
+}
+
+.menus {
+    width: 1190px;
+    height: 38px;
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+    margin: 0 auto;
+    margin-bottom: 0;
+    font-size: 14px;
+    position: relative;
+}
+
+.menu-split {
+    display: block;
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent url("../image/menus_split.png") no-repeat scroll left center;
+}
+
+.menus .menu {
+    height: 38px;
+    line-height: 38px;
+    width: 110px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menus .first {
+    width: 81px;
+     background-color: #0AA770;
+}
+
+.first .link {
+    border-left: 0px none;
+}
+
+.menus .link {
+    border-right: 0px none;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+}
+
+.menus .link {
+    display: block;
+    height: 100%;
+    color:inherit;
+    cursor: pointer;
+}
+
+.link.active {
+    color: #FFF;
+    cursor: pointer;
+   
+}
+
+.link.active .menu-split {
+    display: none;
+}
+
+/*.js_https-menu:hover {
+    color: #099e6a;
+}
+*/
+.link .last {
+    display: none;
+}
+
+.w1000px {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.layout-content {
+    clear: both;
+}
+
+.layout-content-slider {
+    width: 280px;
+    float: left;
+    position: relative;
+    z-index: 99;
+}
+
+.clear-box {
+    height: 0;
+    clear: both;
+    font-size: 0px;
+    overflow: hidden;
+}
+.clear-flow{
+    overflow: hidden;
+}
+
+.servicetab {
+    width: 278px;
+    border-bottom: 0px none;
+}
+
+.servicetab-bd {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.starbar {
+    padding: 9px 0px 10px 18px;
+}
+
+.startbar-list {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.baritem {
+    width: 128px;
+}
+
+.baritem .category {
+    padding-left: 25px;
+    float: left;
+    position: relative;
+    padding-top: 6px;
+}
+
+.star-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent url("../image/index_menus_widthlg.png") no-repeat scroll 0% 0%;
+}
+
+.g-br3 {
+    border: 1px solid #CECECE;
+}
+
+.baritem i {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 0px;
+}
+
+.i-tv {
+    background-position: -20px -81px;
+}
+
+.baritem .split {
+    padding: 0px 5px;
+    color: #999;
+    position: relative;
+    top: -1px;
+}
+
+.i-game {
+    background-position: -19px -301px;
+}
+
+.i-movie {
+    background-position: -20px -160px;
+}
+
+.i-comic {
+    background-position: -20px -381px;
+}
+
+.i-toutiao {
+    background-position: -20px -100px;
+}
+
+.i-travel {
+    background-position: -20px -261px;
+}
+
+.i-caipiao {
+    background-position: -20px -21px;
+}
+
+.i-gaoxiao {
+    background-position: -20px -121px;
+}
+
+.i-tuan {
+    background-position: -20px -281px;
+}
+
+.i-music {
+    background-position: -20px -362px;
+}
+
+.i-life {
+    background-position: -20px -221px;
+}
+
+.i-food {
+    background-position: -19px -42px;
+}
+
+.baritem-link:hover {
+    text-decoration: underline;
+    color: #FF3C00;
+}
+
+.servicetab li {
+    list-style: outside none none;
+}
+
+.layout-content-ct {
+    width: 900px;
+    float: right;
+}
+
+.layout-famoussite {
+    width: 898px;
+    border-width: 1px;
+    position: relative;
+}
+
+.s-br21 {
+    border: 1px solid #ADB;
+}
+
+.g-bg5 {
+    background-color: #FCFCFC;
+}
+
+#box-site {
+    position: relative;
+    z-index: 300;
+}
+
+.site-manage {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: -316px -128px;
+    cursor: pointer;
+    z-index: 999;
+    background-image: url("../image/index_widthlg.png");
+}
+
+.site-bd {
+    width: 868px;
+    padding-left: 23px;
+    padding-top: 11px;
+    position: relative;
+}
+
+.site-hd0 {
+    padding-bottom: 5px;
+}
+
+.site-item-normal {
+    width: 130px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-right:4px;
+    float: left;
+    padding-left: 9px;
+    position: relative;
+}
+
+.site-item {
+    color: #000;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+
+}
+
+.g-ib {
+    display: inline-block;
+}
+
+
+.sitesublink {
+    background: transparent none repeat scroll 0px center;
+    padding-left: 0px !important;
+    padding-right: 5px;
+    position: relative;
+    z-index: 88;
+    display: inline-block;
+
+}
+.js_bd li:nth-child(1) a:nth-child(1){
+    background:url(../image/7656.png) no-repeat;
+}
+.js_bd li:nth-child(2) a:nth-child(1){
+    background:url(../image/9898.png) no-repeat;
+}
+.js_bd li:nth-child(3) a:nth-child(1){
+    background:url(../image/9935.png) no-repeat;
+}
+.js_bd li:nth-child(4) a{
+    background:url(../image/7082.png) no-repeat ;
+}
+.js_bd li:nth-child(5) a{
+    background:url(../image/7183.png) no-repeat ;
+}
+.js_bd li:nth-child(6) a{
+    background:url(../image/14.341.png) no-repeat ;
+}
+.js_bd li:nth-child(7) a{
+    background:url(../image/10138.2.png) no-repeat ;
+}
+.js_bd li:nth-child(8) a{
+    background:url(../image/8838.png) no-repeat ;
+}
+.js_bd li:nth-child(9) a{
+    background:url(../image/defaultIcon1229.png) no-repeat 2px -358px;
+}
+.js_bd li:nth-child(10) a{
+    background:url(../image/game0331.png) no-repeat ;
+}
+.js_bd li:nth-child(11) a{
+    background:url(../image/10062.png) no-repeat ;
+}
+.js_bd li:nth-child(12) a:nth-child(1){
+    background:url(../image/10435.png) no-repeat ;
+}
+.js_bd li:nth-child(13) a{
+    background:url(../image/21.1.png) no-repeat ;
+}
+.js_bd li:nth-child(14) a{
+    background:url(../image/8.411.png) no-repeat ;
+}
+.js_bd li:nth-child(15) a{
+    background:url(../image/6282.png) no-repeat ;
+}
+.js_bd li:nth-child(16) a{
+    background:url(../image/1419388771.png) no-repeat ;
+}
+.js_bd li:nth-child(17) a{
+    background:url(../image/380.png) no-repeat ;
+}
+.js_bd li:nth-child(18) a{
+   background:url(../image/9483.png) no-repeat ; 
+}
+.site-item-normal a {
+    outline: 0px none;
+    text-decoration: none;
+    padding-left: 25px;
+    display: inline-block;
+    background-position: 2px 44%!important;
+}
+.site-item-add-short {
+    margin: 64px 0px 4px -26px;
+    z-index: 126;
+    width: 20px;
+}
+.site-item-add {
+    border: 1px dotted #BBB;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.site-item-add i {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 17px;
+    background-image: url("../image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: -278px -396px;
+}
+.box-famoussite {
+    padding-top: 5px;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+.widget-famoussite {
+    clear: both;
+}
+.widget-famoussite .wf-line {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.widget-famoussite .wf-line0 {
+    top: 0px;
+}
+.widget-famoussite .wf-line {
+    position: relative;
+    z-index: 110;
+    clear: both;
+    margin: 0px 14px;
+    top: 0px;
+    border-bottom: 1px solid #F0F0F0;
+}
+ .widget-famoussite .wf-inner {
+    margin-left: 30px;
+    padding-bottom: 30px;
+padding-top: 4px;
+}
+.widget-famoussite span {
+    float:left;
+    width: 143px;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+
+height: 30px;
+line-height: 30px;
+}
+.widget-famoussite span a {
+    padding: 1px 4px;
+    color:inherit;
+}
+.g-red{
+    color: #F50!important;
+}
+
+.site-item-add:hover{
+     border:1px solid #97C853;
+}
+#__wgt_0_12 .open-up {
+    width: 22px;
+    height: 22px;
+    background: transparent url("../image/index_icon.png") no-repeat scroll -583px -683px;
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+}
+.bg-box {
+    position: absolute;
+    top: 25px;
+    left: -6px;
+    z-index: 101;
+}
+.site-inner {
+    padding: 1px 6px;
+    border: 1px solid #D9D9D9;
+    text-align: left;
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    float: left;
+}
+.site-inner .site-item {
+    display: block;
+    white-space: nowrap;
+    line-height: 26px;
+    padding: 1px 4px;
+    }
+#bank{
+    display:none;
+}
